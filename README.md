@@ -21,6 +21,14 @@ The device measures both linear and 3-D signals. Each 3-D signal is a composite 
 
   * For this analysis only mean and standard deviation were kept for the time-domain signals. Only mean frequency was kept for the frequency-domain signals.
 
-
-
-
+| Base Variable     | Derived Measures                  | Count | Description           | Domain    |
+|-------------------|-----------------------------------|-------|-----------------------|-----------|
+| Body Acc          | (Mean, SD)x(X,Y,Z, Mag)           | 8     | Body Accelerometer    | Time      |
+| Gravity Acc       | (Mean, SD)x(X,Y,Z, Mag)           | 8     | Gravity Accelerometer | Time      |
+| Body AccJerk      | (Mean, SD)x(X,Y,Z, Mag)           | 8     | Body Acc Jerk         | Time      |
+| Body Gyro         | (Mean, SD)x(X,Y,Z, Mag)           | 8     | Body Gyrometer        | Time      |
+| Body GyroJerk     | (Mean, SD)x(X,Y,Z, Mag)           | 8     | Body Gyro Jerk        | Time      |
+| FFT Body Acc      | (Mean, SD, MeanFreq)x(X,Y,Z, Mag) | 12    | Body Accelerometer    | Frequency |
+| FFT Body AccJerk  | (Mean, SD, MeanFreq)x(X,Y,Z, Mag) | 12    | Body Acc Jerk         | Frequency |
+| FFT Body Gyro     | (Mean, SD, MeanFreq)x(X,Y,Z, Mag) | 12    | Body Gyrometer        | Frequency |
+| FFT Body GyroJerk | (Mean, SD, MeanFreq)              | 3     | Body Gyro Jerk        | Frequency |
